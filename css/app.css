@@ -81,13 +81,18 @@ h1 {
     font-size: 33px;
 }
 
+.deck .card.wrong {
+    cursor: default;
+    background: orange;
+    font-size: 33px;
+}
 /*
  * Styles for the Score Panel
  */
 
 .score-panel {
     text-align: left;
-    width: 345px;
+    width: 445px;
     margin-bottom: 10px;
 }
 
@@ -98,6 +103,11 @@ h1 {
     margin: 0 5px 0 0;
 }
 
+.score-panel h4{
+    margin: 0 0 0 80px;
+    display: inline-block;
+}
+
 .score-panel .stars li {
     list-style: none;
     display: inline-block;
@@ -106,4 +116,50 @@ h1 {
 .score-panel .restart {
     float: right;
     cursor: pointer;
+}
+
+.timer {
+    text-align: center;
+}
+
+/*test css for pop up window */
+
+.congrats {
+    display: none;
+    width: 30em;
+    height: 30em;
+    text-align: center;
+    background-color: white;
+    margin: auto;
+    padding: auto;
+    font-family: inherit;
+}
+
+.check {
+    margin-top: 20px;
+    font-size: 5em;
+    color: #50c950
+}
+
+.new-game {
+    margin-top: 20px;
+    height: 35px;
+    width: 130px;
+    background-color: #007bff;
+    font-family: arial;
+    font-size: 15px;
+    color: white;
+    border: none;
+    border-radius: 5%;
+    cursor: pointer;
+}
+
+.stars li {
+    color: gold;
+    list-style: none;
+    display: inline-block;
+}
+
+ul {
+    padding-left: 0px;
 }
