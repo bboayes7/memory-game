@@ -1,20 +1,16 @@
 # Memory Game Project
 
-## Table of Contents
+## Description
 
-* [Instructions](#instructions)
-* [Contributing](#contributing)
+Simple Memory Game used with Udacity's Starter Code. The game begins when the page starts up and you will be timed.
+The more moves you make the less star rating you will receive. The lowest star rating will be one star. 
 
-## Instructions
+To get started run the index.html on your browser and start playing.
 
-The starter project has some HTML and CSS styling to display a static version of the Memory Game project. You'll need to convert this project from a static project to an interactive one. This will require modifying the HTML and CSS files, but primarily the JavaScript file.
+## Known Issues
 
-To get started, open `js/app.js` and start building out the app's functionality
+The game breaks when you:
+ 1. click a matched card with a turned over card
+ 2. click all the cards like crazy
 
-For specific, detailed instructions, look at the project instructions in the [Udacity Classroom](https://classroom.udacity.com/me).
-
-## Contributing
-
-This repository is the starter code for _all_ Udacity students. Therefore, we most likely will not accept pull requests.
-
-For details, check out [CONTRIBUTING.md](CONTRIBUTING.md).
+ When the game breaks, just press the restart button.
