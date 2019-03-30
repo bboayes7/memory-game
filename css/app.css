@@ -17,7 +17,7 @@ body {
 }
 
 body {
-    background: #ffffff url('../img/geometry2.png'); /* Background pattern from Subtle Patterns */
+    background: #ffffff url('../img/sun-pattern.png'); /* Background pattern from Subtle Patterns */
     font-family: 'Coda', cursive;
 }
 
@@ -40,7 +40,7 @@ h1 {
 .deck {
     width: 660px;
     min-height: 680px;
-    background: linear-gradient(160deg, #02ccba 0%, #aa7ecd 100%);
+    background: linear-gradient(160deg, #ffffff 0%, #aa7ecd 100%);
     padding: 32px;
     border-radius: 10px;
     box-shadow: 12px 15px 20px 0 rgba(46, 61, 73, 0.5);
@@ -49,12 +49,13 @@ h1 {
     justify-content: space-between;
     align-items: center;
     margin: 0 0 3em;
+    
 }
 
 .deck .card {
     height: 125px;
     width: 125px;
-    background: #2e3d49;
+    background: #686e74;
     font-size: 0;
     color: #ffffff;
     border-radius: 8px;
@@ -67,8 +68,12 @@ h1 {
 
 .deck .card.open {
     transform: rotateY(0);
-    background: #02b3e4;
+    background: #aa7ecd;
     cursor: default;
+}
+
+.card:hover {
+    opacity: .9;
 }
 
 .deck .card.show {
@@ -77,7 +82,7 @@ h1 {
 
 .deck .card.match {
     cursor: default;
-    background: #02ccba;
+    background: #e1e44c;
     font-size: 33px;
 }
 
@@ -129,10 +134,12 @@ h1 {
     width: 30em;
     height: 30em;
     text-align: center;
-    background-color: white;
     margin: auto;
     padding: auto;
     font-family: inherit;
+    background-color: rgba(248, 248, 248, 0.61);
+    border-radius: 8pt;
+    box-shadow: 12px 15px 20px 0 rgba(46, 61, 73, 0.5);
 }
 
 .check {
@@ -141,7 +148,7 @@ h1 {
     color: #50c950
 }
 
-.new-game {
+.new-game, .start-game {
     margin-top: 20px;
     height: 35px;
     width: 130px;
@@ -163,3 +170,27 @@ h1 {
 ul {
     padding-left: 0px;
 }
+
+.start {
+    margin-top: 3em;
+    background-color: rgba(248, 248, 248, 0.61);
+    border-radius: 8pt;
+    box-shadow: 12px 15px 20px 0 rgba(46, 61, 73, 0.5);
+    padding: 10px;
+}
+
+.start img {
+    display: block;
+    width: 30em;
+    margin: 0 auto;
+}
+
+.start-game:hover, .new-game:hover {
+    background-color: gold;
+}
+
+.start button{
+    display: block;
+    margin: 0 auto;
+}
+
